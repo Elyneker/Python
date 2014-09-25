@@ -27,5 +27,5 @@ while num1 != 0:
 
 print str(resultado) + ',' + str(resultado2)
 
-# Esta com apenas 1 numero depois da virgula. Preguica ter deminar. Se eu fosse fazer para varios mumeros depois da vírgula usaria a mesma logica, mas criaria uma
-# funcao para ir retornando os valores depois da virgula.
+# Esta com apenas 1 numero depois da virgula. Preguica ter deminar. Se eu fosse fazer para varios mumeros depois
+# da vírgula usaria a mesma logica, mas criaria uma funcao para ir retornando os valores depois da virgula.
