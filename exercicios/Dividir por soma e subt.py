@@ -1,25 +1,31 @@
-###############################
+############################
 # Dividir numeros por soma #
-################################
+############################
 
-num1 = input('Digite um numero: ')
-num2 = input('Digite outro numero ')
+num1 = input('Digite o numerador: ')
+num2 = input('Digite o denominador ')
 resultado = 0
 resultado2 = 0
 
-def divisor(num, den):
-	global resultado2
-	while num != 0:
-		num -= den
-		resultado2 = resultado2 + 1
+def mult_por_10(valor):
+	t = 0
+	for x in range(1, 11):
+		t += valor
+	return t
 
 while num1 != 0:
+	if num1 - num2 < 0:
+		num3 = mult_por_10(num1)
+		while num3 > 0:
+			if num3 - num2 < 0:
+				break
+			num3 -= num2
+			resultado2 += 1
+		break
 	num1 -= num2
-	resultado = resultado + 1
-
-	if num1-num2 < 0 and num1 != 0:
-		num3 = 10 - num1
-		num1 = num1 + num3
-		divisor(num1, num2)*
+	resultado += 1
 
 print str(resultado) + ',' + str(resultado2)
+
+# Esta com apenas 1 casa decimal. Preguica ter deminar. Se eu fosse fazer usaria a mesma logica, mas criaria uma funcao para ir retornando
+# os valores depois da virgula.
