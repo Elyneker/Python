@@ -1,5 +1,5 @@
 #########################################################
-# Devolver ao cliente o menor número de notas de um troco
+# Devolver ao cliente o menor numero de notas de um troco
 #########################################################
 
 valor = input("valor da conta: ")
