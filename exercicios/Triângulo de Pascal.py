@@ -56,7 +56,7 @@ for i in range(len(triangulo)):
 
 
 
-#Observacoes
+#Observacoes para construção
 # 1 - Todo primeiro e ultimo elemento x da linha e = 1;
 # 2 - O elemento x2 de cada linha e a soma do x1 + x2 dos elementos da linha anterior
 # 3 - O elemento x3 de cada linha e a soma do x2 + x3 dos elementos da linha anterior
