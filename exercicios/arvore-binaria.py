@@ -1,4 +1,5 @@
-qtdNos = input("Qual o tamanho da arvore?: ")
+# qtdNos = input("Qual o tamanho da arvore?: ")
+qtdNos = 15
 linhas = []
 
 
@@ -10,7 +11,7 @@ def Is_new_line(x):
 		x = x/2
 	return False
 
-def montador(nos):
+def monta_nos(nos):
 	pos = 0
 	for x in range(1, nos + 1):
 		if Is_new_line(x):
@@ -20,15 +21,21 @@ def montador(nos):
 		else:
 			linhas[pos-1].append(x)
 
+def espacos(qtdNos):
+	x = 1
+	while x <= qtdNos:
+		x *= 2
+	qtdEsp = x-1
+	return qtdEsp
 
-def printer(nos):
-	for no in range(len(nos)):
-		print " ".join(map(str, nos[no]))
+
+monta_nos(qtdNos)
+espc = espacos(qtdNos)
+
+for i in range(len(linhas)):
+	print 1*" " + (1*" ").join(map(str, linhas[i]))
 
 
-
-montador(qtdNos)
-printer(linhas)
 
 
 
